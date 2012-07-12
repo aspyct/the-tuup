@@ -9,7 +9,7 @@ TARGET=$(BLD_DIR)/going
 all: going
 
 clean:
-	rm $(TARGET)	
+	rm -rf $(BLD_DIR)
 
 going: prepare
 	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCES)
